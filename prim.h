@@ -20,5 +20,5 @@ typedef struct{
 }lista;
 
 void criano (no *temp, char *pais, int *pop, int *area, int *gdp);
-void preencheArvore(no *temp, arvore *paises);
+void preencheArvore(no *temp, no **raiz);
 void preencheLista(no*temp, lista *listaPaises);

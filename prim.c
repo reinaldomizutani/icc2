@@ -6,19 +6,19 @@ void criano (no *temp, char *pais, int *pop, int *area, int *gdp){
     temp->pop = *pop;
     temp->area = *area;
     temp->gdp = *gdp;
+    temp->dir = NULL;
+    temp->esq = NULL;
 }
 
-void preencheArvore(no *newnode, arvore *paises){
-    no *aux;
-    aux = (no*)malloc(sizeof(no));
-    aux = newnode;
-    if(paises->raiz == NULL){
-        paises->raiz = aux;
+void preencheArvore(no *newnode, no **raiz){
+
+    if(*raiz == NULL){
+        (*raiz) = newnode;
     }
     else{
-        printf("asdfasdf");
+        printf("Arvore ");
     }
 }
-void preencheLista(no*temp, lista *listaPaises){
+void preencheLista(no *temp, lista *listaPaises){
     printf("asdfasdf");
 }
